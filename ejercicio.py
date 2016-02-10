@@ -1,10 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# hola, hola
-
-import sys
-
 usuarios = {}
 fd = open('/etc/passwd', 'r')
 
@@ -19,4 +15,4 @@ try:
     print usuarios['imaginario']
 except KeyError:
     print "Usuario no encontrado"
-    sys.exit()
+
